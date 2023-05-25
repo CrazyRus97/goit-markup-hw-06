@@ -591,11 +591,145 @@ img {
   transform: translate(-50%, -50%);
   width: 408px;
   min-height: 584px;
+  padding: 24px;
   background: #fcfcfc;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   transition: transform var(--transition-param);
+}
+
+.modal-title {
+  margin-bottom: 16px;
+  margin-top: 48px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: var(--primary-color-dark-theme);
+}
+
+.contact-form-field-wrapper {
+  display: block;
+  margin-bottom: 8px;
+}
+
+.contact-form-checkbox-wrapper {
+  margin-top: 16px;
+  margin-bottom: 24px;
+  display: block;
+}
+
+.contact-form-field-name {
+  display: block;
+  margin-bottom: 4px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: #8e8f99;
+}
+
+.contact-form-input {
+  position: relative;
+  width: 100%;
+  height: 40px;
+  padding-left: 38px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 4px;
+  transition: border-color var(--transition-param);
+}
+
+.contact-form-input:focus,
+.contact-form-comment:focus {
+  outline: none;
+  border-color: var(--primary-brand-color);
+}
+
+.contact-form-input-wrapper {
+  position: relative;
+  display: block;
+}
+
+.contact-form-input-icon {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 16px;
+  transform: translate(0, -50%);
+  transition: fill var(--transition-param);
+}
+
+.contact-form-input:focus + .contact-form-input-icon {
+  fill: var(--primary-brand-color);
+}
+
+.contact-form-comment {
+  width: 100%;
+  height: 120px;
+  padding-top: 8px;
+  padding-left: 16px;
+  resize: none;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 4px;
+  transition: border-color var(--transition-param);
+}
+
+.contact-form-comment::placeholder {
+  padding-top: 8px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17px;
+  letter-spacing: 0.04em;
+  color: #2e2f4266;
+}
+
+.contact-form-checkbox-wrapper {
+  display: flex;
+  align-items: center;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: #8e8f99;
+}
+
+.privacy-policy-link {
+  line-height: 1.33;
+  color: var(--primary-brand-color);
+}
+
+.contact-form-checkbox {
+  appearance: none;
+  position: absolute;
+}
+
+.contact-form-checkbox-own {
+  margin-right: 8px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 2px;
+  transition: background-color var(--transition-param), border-color var(--transition-param);
+}
+
+.contact-form-checkmark-icon {
+  opacity: 0;
+  transition: opacity var(--transition-param);
+}
+
+.contact-form-checkbox:checked + .contact-form-checkbox-own {
+  background-color: var(--accent-color);
+  border-color: var(--accent-color);
+}
+
+.contact-form-checkbox:checked + .contact-form-checkbox-own .contact-form-checkmark-icon {
+  opacity: 1;
+}
+
+.modal-send-btn {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .modal-close-btn {
