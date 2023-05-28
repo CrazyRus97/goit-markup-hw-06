@@ -59,6 +59,11 @@ img {
   padding-right: 15px;
 }
 
+.visually-hidden {
+  appearance: none;
+  position: absolute;
+}
+
 /*====================================  COMPONENTS ==================================== */
 .modal-opn-btn {
   padding: 16px 30px;
@@ -688,11 +693,11 @@ img {
   color: var(--primary-color-dark-theme);
 }
 
-.contact-form-wrapper {
+.contact-form-field-wrapper {
   margin-bottom: 8px;
 }
 
-.contact-form-field-wrapper {
+.contact-form-field-name {
   display: block;
   margin-bottom: 4px;
   font-weight: 400;
@@ -702,7 +707,7 @@ img {
   color: #8e8f99;
 }
 
-.contact-form-checkbox-wrapper {
+.contact-form-checkbox-name {
   margin-top: 16px;
   margin-bottom: 24px;
   display: block;
@@ -744,6 +749,10 @@ img {
   fill: var(--primary-brand-color);
 }
 
+.contact-form-comment-wrapper {
+  margin-bottom: 16px;
+}
+
 .contact-form-comment {
   width: 100%;
   height: 120px;
@@ -753,7 +762,7 @@ img {
   border-radius: 4px;
   font-size: 12px;
   line-height: 1.17;
-  letter-spacing: 0.04;
+  letter-spacing: 0.04em;
   color: rgba(46, 47, 66, 0.4);
   background-color: transparent;
   outline: transparent;
@@ -770,6 +779,10 @@ img {
 }
 
 .contact-form-checkbox-wrapper {
+  margin-bottom: 24px;
+}
+
+.contact-form-checkbox-name {
   display: flex;
   align-items: center;
   font-weight: 400;
@@ -784,16 +797,18 @@ img {
   color: var(--primary-brand-color);
 }
 
-.contact-form-checkbox {
-  appearance: none;
-  position: absolute;
-}
-
 .contact-form-checkbox-own {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 16px;
+  height: 16px;
   margin-right: 8px;
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 2px;
-  transition: background-color var(--transition-param), border-color var(--transition-param);
+  fill: transparent;
+  transition: background-color var(--transition-param), border var(--transition-param),
+    border-color var(--transition-param), fill var(--transition-param);
 }
 
 .contact-form-checkmark-icon {
@@ -803,7 +818,9 @@ img {
 
 .contact-form-checkbox:checked + .contact-form-checkbox-own {
   background-color: var(--accent-color);
+  border: none;
   border-color: var(--accent-color);
+  fill: var(--secondary-color-light-theme);
 }
 
 .contact-form-checkbox:checked + .contact-form-checkbox-own .contact-form-checkmark-icon {
@@ -850,4 +867,5 @@ img {
   opacity: 0;
   pointer-events: none;
 }
+
 /*==================================== /MODAL ====================================*/
