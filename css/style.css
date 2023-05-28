@@ -694,23 +694,18 @@ img {
 
 .contact-form-field-wrapper {
   display: block;
-  margin-bottom: 8px;
-}
-
-.contact-form-checkbox-wrapper {
-  margin-top: 16px;
-  margin-bottom: 24px;
-  display: block;
-}
-
-.contact-form-field-name {
-  display: block;
   margin-bottom: 4px;
   font-weight: 400;
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
   color: #8e8f99;
+}
+
+.contact-form-checkbox-wrapper {
+  margin-top: 16px;
+  margin-bottom: 24px;
+  display: block;
 }
 
 .contact-form-input {
