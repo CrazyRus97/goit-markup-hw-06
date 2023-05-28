@@ -627,7 +627,7 @@ img {
 .footer-subscribe-btn {
   display: flex;
   align-items: center;
-  gap: 16px;
+  justify-content: center;
   padding: 8px 24px;
   height: 40px;
   min-width: 165px;
@@ -644,6 +644,10 @@ img {
 .footer-subscribe-btn:hover,
 .footer-subscribe-btn:focus {
   background-color: var(--success-color);
+}
+
+.footer-subscribe-icon {
+  margin-left: 16px;
 }
 
 /*==================================== /FOOTER ====================================*/
