@@ -811,20 +811,11 @@ img {
     border-color var(--transition-param), fill var(--transition-param);
 }
 
-.contact-form-checkmark-icon {
-  opacity: 0;
-  transition: opacity var(--transition-param);
-}
-
-.contact-form-checkbox:checked + .contact-form-checkbox-own {
+.contact-form-checkbox:checked + .contact-form-checkbox-name .contact-form-checkbox-own {
   background-color: var(--accent-color);
   border: none;
   border-color: var(--accent-color);
   fill: var(--secondary-color-light-theme);
-}
-
-.contact-form-checkbox:checked + .contact-form-checkbox-own .contact-form-checkmark-icon {
-  opacity: 1;
 }
 
 .modal-send-btn {
