@@ -544,6 +544,10 @@ img {
   color: var(--primary-color-light-theme);
 }
 
+.footer-part-social-media {
+  margin-right: 80px;
+}
+
 .social-media-title {
   margin-bottom: 16px;
   font-weight: 500;
@@ -571,6 +575,77 @@ img {
 .footer-social-list-icon {
   fill: var(--primary-color-light-theme);
 }
+
+.subscribe-title {
+  margin-bottom: 16px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--secondary-color-light-theme);
+}
+
+.footer-subscribe-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+}
+
+.footer-subscribe-input {
+  padding-left: 16px;
+  width: 264px;
+  height: 40px;
+  border: 1px solid var(--secondary-color-light-theme);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background-color: var(--primary-color-dark-theme);
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 2;
+  letter-spacing: 0.04em;
+  color: var(--secondary-color-light-theme);
+}
+
+.footer-subscribe-input::placeholder {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 2;
+  letter-spacing: 0.04em;
+  color: var(--secondary-color-light-theme);
+}
+
+.footer-subscribe-input:focus,
+.footer-subscribe-input:focus {
+  outline: none;
+  border-color: var(--primary-brand-color);
+}
+
+.footer-subscribe-btn-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.footer-subscribe-btn {
+  padding: 8px 24px;
+  height: 40px;
+  min-width: 165px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: var(--secondary-color-light-theme);
+  background-color: var(--primary-brand-color);
+  border: none;
+  border-radius: 4px;
+  transition: background-color var(--transition-param);
+}
+.footer-subscribe-btn:hover,
+.footer-subscribe-btn:focus {
+  background-color: var(--accent-color);
+}
+
 /*==================================== /FOOTER ====================================*/
 
 /*==================================== MODAL ====================================*/

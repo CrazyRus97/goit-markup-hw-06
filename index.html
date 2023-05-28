@@ -514,21 +514,21 @@
               </a>
             </li>
             <li class="social-list-item">
-              <a href="" class="social-list-link social-list-link-dark link">
+              <a href="#" class="social-list-link social-list-link-dark link">
                 <svg class="social-list-icon" aria-label="twitter icon" width="24" height="24">
                   <use href="./images/icons.svg#icon-twitter"></use>
                 </svg>
               </a>
             </li>
             <li class="social-list-item">
-              <a href="" class="social-list-link social-list-link-dark link">
+              <a href="#" class="social-list-link social-list-link-dark link">
                 <svg class="social-list-icon" aria-label="twitter icon" width="24" height="24">
                   <use href="./images/icons.svg#icon-facebook"></use>
                 </svg>
               </a>
             </li>
             <li class="social-list-item">
-              <a href="" class="social-list-link social-list-link-dark link">
+              <a href="#" class="social-list-link social-list-link-dark link">
                 <svg class="social-list-icon" aria-label="twitter icon" width="24" height="24">
                   <use href="./images/icons.svg#icon-linkedin"></use>
                 </svg>
@@ -536,8 +536,40 @@
             </li>
           </ul>
         </div>
+        <div class="footer-part-subscribe">
+          <p class="subscribe-title">Subscribe</p>
+          <form class="footer-subscribe-form">
+            <label class="footer-subscribe-field-wrapper">
+              <input
+                class="footer-subscribe-input"
+                type="email"
+                name="subscribe_user_email"
+                required
+                placeholder="E-mail"
+                pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
+                title="xxx-xxx-xx-xx"
+              />
+            </label>
+            <label class="footer-subscribe-field-wrapper">
+              <button type="submit" class="footer-subscribe-btn button">
+                <div class="footer-subscribe-btn-wrapper">
+                  Subscribe
+                  <svg
+                    class="footer-subscribe-icon"
+                    aria-label="paper plane icon"
+                    width="24"
+                    height="24"
+                  >
+                    <use href="./images/icons.svg#icon-paper-plane"></use>
+                  </svg>
+                </div>
+              </button>
+            </label>
+          </form>
+        </div>
       </div>
     </footer>
+    <!-- MODAL -->
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="modal-close-btn" data-modal-close>
