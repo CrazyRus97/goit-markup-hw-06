@@ -688,6 +688,10 @@ img {
   color: var(--primary-color-dark-theme);
 }
 
+.contact-form-wrapper {
+  margin-bottom: 8px;
+}
+
 .contact-form-field-wrapper {
   display: block;
   margin-bottom: 8px;
