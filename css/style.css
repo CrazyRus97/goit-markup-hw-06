@@ -624,13 +624,10 @@ img {
   border-color: var(--success-color);
 }
 
-.footer-subscribe-btn-wrapper {
+.footer-subscribe-btn {
   display: flex;
   align-items: center;
   gap: 16px;
-}
-
-.footer-subscribe-btn {
   padding: 8px 24px;
   height: 40px;
   min-width: 165px;
