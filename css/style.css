@@ -809,10 +809,10 @@ img {
     border-color var(--transition-param), fill var(--transition-param);
 }
 
-.contact-form-checkbox:checked + .contact-form-checkbox-name .contact-form-checkbox-own {
+.contact-form-checkbox:checked + .contact-form-checkbox-name > .contact-form-checkbox-own {
   fill: var(--secondary-color-light-theme);
-  background-color: var(--accent-color);
   border: none;
+  background-color: var(--accent-color);
   border-color: var(--accent-color);
 }
 
