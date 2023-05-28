@@ -618,7 +618,7 @@ img {
 .footer-subscribe-input:focus,
 .footer-subscribe-input:focus {
   outline: none;
-  border-color: var(--primary-brand-color);
+  border-color: var(--success-color);
 }
 
 .footer-subscribe-btn-wrapper {
@@ -643,7 +643,7 @@ img {
 }
 .footer-subscribe-btn:hover,
 .footer-subscribe-btn:focus {
-  background-color: var(--accent-color);
+  background-color: var(--success-color);
 }
 
 /*==================================== /FOOTER ====================================*/
