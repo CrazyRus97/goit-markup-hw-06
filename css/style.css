@@ -594,10 +594,7 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.footer-subscribe-field-wrapper {
-  margin-right: 24px;
+  gap: 24px;
 }
 
 .footer-subscribe-input {
@@ -802,6 +799,8 @@ img {
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 2px;
   fill: transparent;
+  transition: fill var(--transition-param), border var(--transition-param),
+    background-color var(--transition-param), border-color var(--transition-param);
 }
 
 .contact-form-checkbox:checked + .contact-form-checkbox-name > .contact-form-checkbox-own {
