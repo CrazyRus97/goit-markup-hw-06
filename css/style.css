@@ -648,7 +648,7 @@ img {
 }
 .footer-subscribe-btn:hover,
 .footer-subscribe-btn:focus {
-  background-color: var(--success-color);
+  background-color: var(--accent-color);
 }
 
 .footer-subscribe-icon {
@@ -707,12 +707,6 @@ img {
   color: #8e8f99;
 }
 
-.contact-form-checkbox-name {
-  margin-top: 16px;
-  margin-bottom: 24px;
-  display: block;
-}
-
 .contact-form-input {
   position: relative;
   width: 100%;
@@ -742,6 +736,7 @@ img {
   top: 50%;
   left: 16px;
   transform: translate(0, -50%);
+  fill: var(--primary-color-dark-theme);
   transition: fill var(--transition-param);
 }
 
@@ -754,6 +749,7 @@ img {
 }
 
 .contact-form-comment {
+  display: block;
   width: 100%;
   height: 120px;
   padding: 8px 16px;
@@ -783,6 +779,7 @@ img {
 }
 
 .contact-form-checkbox-name {
+  display: block;
   font-weight: 400;
   font-size: 12px;
   line-height: 1.17;
